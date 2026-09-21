@@ -1,7 +1,9 @@
 """
-v7.0.1 Data Fabric, v7.0.2 Knowledge Graph,
-v7.0.3 Research Relationships, and
-v7.0.4 Research Event Lineage.
+v7.0.1 Data Fabric
+v7.0.2 Knowledge Graph Bridge
+v7.0.3 Research Relationships
+v7.0.4 Research Event Lineage
+v7.0.5 Autonomous Experiment Engine
 
 Research-only architecture.
 No real-money execution is supported.
@@ -28,7 +30,17 @@ from .lineage_service import (
     ResearchLineageService,
 )
 
-__version__ = "v7.0.4"
+from .experiment_engine import (
+    AutonomousExperimentEngine,
+    ExperimentApprovalRequiredError,
+    ExperimentEngineError,
+    ExperimentRecord,
+    ExperimentResult,
+    ExperimentSpec,
+    ExperimentStatus,
+)
+
+__version__ = "v7.0.5"
 
 __all__ = [
     "DataFabric",
@@ -40,5 +52,12 @@ __all__ = [
     "ResearchRelationshipManager",
     "LineageServiceError",
     "ResearchLineageService",
+    "AutonomousExperimentEngine",
+    "ExperimentApprovalRequiredError",
+    "ExperimentEngineError",
+    "ExperimentRecord",
+    "ExperimentResult",
+    "ExperimentSpec",
+    "ExperimentStatus",
     "__version__",
 ]

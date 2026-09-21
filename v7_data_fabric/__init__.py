@@ -4,6 +4,7 @@ v7.0.2 Knowledge Graph Bridge
 v7.0.3 Research Relationships
 v7.0.4 Research Event Lineage
 v7.0.5 Autonomous Experiment Engine
+v7.0.6 Statistical Validation
 
 Research-only architecture.
 No real-money execution is supported.
@@ -40,7 +41,14 @@ from .experiment_engine import (
     ExperimentStatus,
 )
 
-__version__ = "v7.0.5"
+from .statistical_validation import (
+    StatisticalValidationError,
+    StatisticalValidationFacade,
+)
+
+
+__version__ = "v7.0.6"
+
 
 __all__ = [
     "DataFabric",
@@ -59,5 +67,7 @@ __all__ = [
     "ExperimentResult",
     "ExperimentSpec",
     "ExperimentStatus",
+    "StatisticalValidationError",
+    "StatisticalValidationFacade",
     "__version__",
 ]

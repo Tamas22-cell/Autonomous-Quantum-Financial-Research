@@ -9,6 +9,7 @@ v7.0.7 Causal Research and Alpha Discovery
 v7.0.8 Portfolio Intelligence and Risk Governance
 v7.0.9 Shadow Fund and Digital Twin
 v7.0.10 Classical and Quantum Optimization
+v7.0.11 Outcome Attribution and Meta-Learning
 
 Research-only architecture.
 No real-money execution is supported.
@@ -95,8 +96,16 @@ from .classical_quantum_optimization import (
     OptimizationStatus,
 )
 
+from .outcome_attribution_meta_learning import (
+    AttributionRecord,
+    LearningUpdate,
+    OutcomeAttributionError,
+    OutcomeAttributionMetaLearning,
+    OutcomeLabel,
+)
 
-__version__ = "v7.0.10"
+
+__version__ = "v7.0.11"
 
 
 __all__ = [
@@ -151,5 +160,10 @@ __all__ = [
     "OptimizationProblem",
     "OptimizationResult",
     "OptimizationStatus",
+    "AttributionRecord",
+    "LearningUpdate",
+    "OutcomeAttributionError",
+    "OutcomeAttributionMetaLearning",
+    "OutcomeLabel",
     "__version__",
 ]

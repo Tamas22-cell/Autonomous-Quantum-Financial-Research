@@ -7,6 +7,7 @@ v7.0.5 Autonomous Experiment Engine
 v7.0.6 Statistical Validation
 v7.0.7 Causal Research and Alpha Discovery
 v7.0.8 Portfolio Intelligence and Risk Governance
+v7.0.9 Shadow Fund and Digital Twin
 
 Research-only architecture.
 No real-money execution is supported.
@@ -72,8 +73,20 @@ from .portfolio_risk_governance import (
     SignalAction,
 )
 
+from .shadow_fund_digital_twin import (
+    ScenarioResult,
+    ScenarioSeverity,
+    ShadowFundDigitalTwin,
+    ShadowFundDigitalTwinError,
+    ShadowPosition,
+    StressScenario,
+    TwinSnapshot,
+    VirtualFill,
+    VirtualOrderSide,
+)
 
-__version__ = "v7.0.8"
+
+__version__ = "v7.0.9"
 
 
 __all__ = [
@@ -113,5 +126,14 @@ __all__ = [
     "RiskLimits",
     "RiskSeverity",
     "SignalAction",
+    "ScenarioResult",
+    "ScenarioSeverity",
+    "ShadowFundDigitalTwin",
+    "ShadowFundDigitalTwinError",
+    "ShadowPosition",
+    "StressScenario",
+    "TwinSnapshot",
+    "VirtualFill",
+    "VirtualOrderSide",
     "__version__",
 ]

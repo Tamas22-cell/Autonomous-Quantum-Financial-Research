@@ -5,6 +5,7 @@ v7.0.3 Research Relationships
 v7.0.4 Research Event Lineage
 v7.0.5 Autonomous Experiment Engine
 v7.0.6 Statistical Validation
+v7.0.7 Causal Research and Alpha Discovery
 
 Research-only architecture.
 No real-money execution is supported.
@@ -46,8 +47,20 @@ from .statistical_validation import (
     StatisticalValidationFacade,
 )
 
+from .causal_alpha_discovery import (
+    AlphaCandidate,
+    CandidateStatus,
+    CausalAlphaDiscovery,
+    CausalAlphaDiscoveryError,
+    CausalHypothesis,
+    EvidenceAssessment,
+    EvidenceClass,
+    HypothesisStatus,
+    MechanismMapping,
+)
 
-__version__ = "v7.0.6"
+
+__version__ = "v7.0.7"
 
 
 __all__ = [
@@ -69,5 +82,14 @@ __all__ = [
     "ExperimentStatus",
     "StatisticalValidationError",
     "StatisticalValidationFacade",
+    "AlphaCandidate",
+    "CandidateStatus",
+    "CausalAlphaDiscovery",
+    "CausalAlphaDiscoveryError",
+    "CausalHypothesis",
+    "EvidenceAssessment",
+    "EvidenceClass",
+    "HypothesisStatus",
+    "MechanismMapping",
     "__version__",
 ]

@@ -10,6 +10,7 @@ v7.0.8 Portfolio Intelligence and Risk Governance
 v7.0.9 Shadow Fund and Digital Twin
 v7.0.10 Classical and Quantum Optimization
 v7.0.11 Outcome Attribution and Meta-Learning
+v7.0.12 Continuous Research Task Generation
 
 Research-only architecture.
 No real-money execution is supported.
@@ -104,8 +105,16 @@ from .outcome_attribution_meta_learning import (
     OutcomeLabel,
 )
 
+from .continuous_research_tasks import (
+    ContinuousResearchTaskError,
+    ContinuousResearchTaskGenerator,
+    ResearchTask,
+    TaskPriority,
+    TaskStatus,
+)
 
-__version__ = "v7.0.11"
+
+__version__ = "v7.0.12"
 
 
 __all__ = [
@@ -165,5 +174,10 @@ __all__ = [
     "OutcomeAttributionError",
     "OutcomeAttributionMetaLearning",
     "OutcomeLabel",
+    "ContinuousResearchTaskError",
+    "ContinuousResearchTaskGenerator",
+    "ResearchTask",
+    "TaskPriority",
+    "TaskStatus",
     "__version__",
 ]

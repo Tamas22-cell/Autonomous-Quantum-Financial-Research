@@ -6,6 +6,7 @@ v7.0.4 Research Event Lineage
 v7.0.5 Autonomous Experiment Engine
 v7.0.6 Statistical Validation
 v7.0.7 Causal Research and Alpha Discovery
+v7.0.8 Portfolio Intelligence and Risk Governance
 
 Research-only architecture.
 No real-money execution is supported.
@@ -59,8 +60,20 @@ from .causal_alpha_discovery import (
     MechanismMapping,
 )
 
+from .portfolio_risk_governance import (
+    PortfolioRecommendation,
+    PortfolioResearchSignal,
+    PortfolioRiskGovernance,
+    PortfolioRiskGovernanceError,
+    RecommendationStatus,
+    RiskAssessment,
+    RiskLimits,
+    RiskSeverity,
+    SignalAction,
+)
 
-__version__ = "v7.0.7"
+
+__version__ = "v7.0.8"
 
 
 __all__ = [
@@ -91,5 +104,14 @@ __all__ = [
     "EvidenceClass",
     "HypothesisStatus",
     "MechanismMapping",
+    "PortfolioRecommendation",
+    "PortfolioResearchSignal",
+    "PortfolioRiskGovernance",
+    "PortfolioRiskGovernanceError",
+    "RecommendationStatus",
+    "RiskAssessment",
+    "RiskLimits",
+    "RiskSeverity",
+    "SignalAction",
     "__version__",
 ]

@@ -8,6 +8,7 @@ v7.0.6 Statistical Validation
 v7.0.7 Causal Research and Alpha Discovery
 v7.0.8 Portfolio Intelligence and Risk Governance
 v7.0.9 Shadow Fund and Digital Twin
+v7.0.10 Classical and Quantum Optimization
 
 Research-only architecture.
 No real-money execution is supported.
@@ -85,8 +86,17 @@ from .shadow_fund_digital_twin import (
     VirtualOrderSide,
 )
 
+from .classical_quantum_optimization import (
+    ClassicalQuantumOptimizer,
+    OptimizationError,
+    OptimizationMethod,
+    OptimizationProblem,
+    OptimizationResult,
+    OptimizationStatus,
+)
 
-__version__ = "v7.0.9"
+
+__version__ = "v7.0.10"
 
 
 __all__ = [
@@ -135,5 +145,11 @@ __all__ = [
     "TwinSnapshot",
     "VirtualFill",
     "VirtualOrderSide",
+    "ClassicalQuantumOptimizer",
+    "OptimizationError",
+    "OptimizationMethod",
+    "OptimizationProblem",
+    "OptimizationResult",
+    "OptimizationStatus",
     "__version__",
 ]

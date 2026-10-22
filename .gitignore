@@ -9,3 +9,19 @@ venv/
 *.log
 .DS_Store
 Thumbs.db
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated research outputs
+/reports/output/
+
+# IDE backups
+.idea_backup/
+
+# Local secrets
+*.pem
+*.key
+secrets.json

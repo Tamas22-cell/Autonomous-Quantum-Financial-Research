@@ -1,6 +1,6 @@
 # Autonomous Quantum Financial Research Platform — v7.0.12
 
-![Autonomous Quantum Research v7.0.12 — project cover](https://raw.githubusercontent.com/Tamas22-cell/AI-Multi-Agent-Financial-Research-Platform/v7.0.12-autonomous-research/2d1ffc48-2bf7-4b49-a330-6389248e2644.png)
+![Autonomous Quantum Research v7.0.12 — project cover](6b3fd716-8e18-4f18-a334-72cbd646340c.png)
 
 **Experimental multi-agent financial research | autonomous experimentation | classical–quantum portfolio optimization**
 
